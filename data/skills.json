@@ -1,0 +1,16 @@
+{
+  "skills": [
+    { "id": "sk-01", "name": "HTML & CSS", "level": "Familiar", "category": "Web Development", "description": "Building semantic, multi-page websites with external stylesheets." },
+    { "id": "sk-02", "name": "Basic Linux", "level": "Learning", "category": "Systems", "description": "Picking up the command line as a foundation for cybersecurity work." },
+    { "id": "sk-03", "name": "Electronics & Device Repair", "level": "Hands-On", "category": "Hardware", "description": "Practical knowledge of repairing circuits in electronic devices." },
+    { "id": "sk-04", "name": "Basic System Repair", "level": "Hands-On", "category": "Hardware / Software", "description": "Comfortable troubleshooting small, everyday software and hardware issues." },
+    { "id": "sk-05", "name": "AI Tools", "level": "Learning", "category": "Emerging Tech", "description": "Building familiarity with AI tools as they become central to technology." },
+    { "id": "sk-06", "name": "Cybersecurity Fundamentals", "level": "Learning", "category": "Security", "description": "Main area of focus and long-term career direction." }
+  ],
+  "growth_roadmap": [
+    { "skill": "Linux", "target_growth_percent": 70, "reason": "Core ground for any serious cybersecurity work." },
+    { "skill": "HTML & CSS", "target_growth_percent": 70, "reason": "Sharper coding fundamentals across the board." },
+    { "skill": "AI Tools", "target_growth_percent": 70, "reason": "Knowing how to use AI tools is now essential to stay relevant." },
+    { "skill": "Cybersecurity", "target_growth_percent": 70, "reason": "The direction the whole career is built toward." }
+  ]
+}

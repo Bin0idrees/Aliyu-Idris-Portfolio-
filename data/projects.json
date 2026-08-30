@@ -1,0 +1,33 @@
+{
+  "projects": [
+    {
+      "id": "proj-01",
+      "title": "Construction and Testing of a PIC16F84A Microcontroller Programmer",
+      "date": "2021-09",
+      "category": "Hardware / Embedded Systems",
+      "institution": "Iya Abubakar Institute of Information and Communication Technology, Ahmadu Bello University, Zaria",
+      "type": "Diploma group project",
+      "description": "A hardware project focused on building and testing a programmer circuit for the PIC16F84A microcontroller, covering circuit design, construction, and functional testing.",
+      "team_members": [
+        "Muhammed Hassan",
+        "Danmallam Hussaini Muhammad",
+        "Abba Idris Waziri",
+        "Danjuma Amos Likita",
+        "Idris Aliyu",
+        "Muhammad Nafiu Umar",
+        "Haruna Abdullahi Baba",
+        "Shehu Abubakar"
+      ],
+      "tools": ["Circuit Design", "Embedded Systems", "Microcontroller Programming", "Hardware Testing"]
+    },
+    {
+      "id": "proj-02",
+      "title": "Personal Portfolio Website",
+      "date": "2026-08",
+      "category": "Web Development",
+      "type": "Personal / coursework project",
+      "description": "A multi-page personal portfolio built with semantic HTML5 and external CSS3, with structured JSON data modeling skills and projects, a responsive mobile-first layout, and no-JavaScript interactivity.",
+      "tools": ["HTML5", "CSS3", "Responsive Design", "JSON Data Modeling"]
+    }
+  ]
+}
