@@ -1,0 +1,201 @@
+/* ============================================
+   HOME PAGE THEME — "terminal / console" look
+   Scoped entirely under body.home-page so every
+   other page keeps the original blueprint theme.
+============================================ */
+
+body.home-page {
+  background: #0b0f10;
+  color: #d7ffe6;
+}
+
+body.home-page a { color: #4ade80; }
+body.home-page a:hover, body.home-page a:focus { color: #86f5b3; }
+
+/* Header override */
+body.home-page header.site-header {
+  background: #0b0f10;
+  border-bottom: 1px solid #163326;
+}
+
+body.home-page .brand-mark {
+  background: #12241c;
+  border: 1px solid #4ade80;
+  color: #4ade80;
+  font-family: 'Courier New', monospace;
+}
+
+body.home-page .brand-text .dept-name { color: #eafff2; font-family: 'Courier New', monospace; }
+body.home-page .brand-text .uni-name { color: #6fae87; }
+
+body.home-page nav.main-nav a { color: #cdeede; font-family: 'Courier New', monospace; font-size: 0.82rem; }
+
+body.home-page nav.main-nav a:hover,
+body.home-page nav.main-nav a:focus,
+body.home-page nav.main-nav a[aria-current="page"] {
+  background: #12241c;
+  color: #4ade80;
+}
+
+body.home-page .nav-toggle-label { color: #4ade80; border-color: #163326; }
+
+/* ============================================
+   TERMINAL HERO
+============================================ */
+body.home-page .hero {
+  background:
+    linear-gradient(180deg, rgba(11,15,16,0.2), rgba(11,15,16,1) 90%),
+    repeating-linear-gradient(0deg, rgba(74,222,128,0.05) 0px, rgba(74,222,128,0.05) 1px, transparent 1px, transparent 28px);
+  padding: 3.5rem 0 3rem;
+}
+
+.terminal-window {
+  background: #0f1613;
+  border: 1px solid #1e3a2c;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 0 40px rgba(74,222,128,0.08);
+  font-family: 'Courier New', monospace;
+}
+
+.terminal-titlebar {
+  background: #131c17;
+  padding: 0.55rem 0.9rem;
+  display: flex;
+  gap: 0.4rem;
+  align-items: center;
+  border-bottom: 1px solid #1e3a2c;
+}
+
+.terminal-dot {
+  width: 11px;
+  height: 11px;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.terminal-dot.red { background: #ff5f56; }
+.terminal-dot.yellow { background: #ffbd2e; }
+.terminal-dot.green { background: #27c93f; }
+
+.terminal-titlebar span.tt-label {
+  margin-left: 0.6rem;
+  color: #6fae87;
+  font-size: 0.78rem;
+}
+
+.terminal-body {
+  padding: 1.25rem 1.4rem 1.5rem;
+  font-size: 0.92rem;
+  line-height: 1.85;
+}
+
+.terminal-body .prompt { color: #4ade80; }
+.terminal-body .cmd { color: #eafff2; }
+.terminal-body .out { color: #a9d9bd; }
+.terminal-body .out strong { color: #eafff2; }
+
+.cursor-blink {
+  display: inline-block;
+  width: 8px;
+  height: 1em;
+  background: #4ade80;
+  vertical-align: text-bottom;
+  animation: blink-caret 1s step-end infinite;
+}
+
+@keyframes blink-caret {
+  50% { opacity: 0; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .cursor-blink { animation: none; }
+}
+
+/* Hero grid: photo + terminal */
+body.home-page .hero-grid {
+  grid-template-columns: 200px 1fr;
+  align-items: start;
+}
+
+body.home-page .hero-photo img {
+  border-radius: 6px;
+  border: 1px solid #1e3a2c;
+  filter: grayscale(35%) contrast(1.05) sepia(15%) hue-rotate(60deg) saturate(1.4);
+}
+
+body.home-page .eyebrow { color: #4ade80; font-family: 'Courier New', monospace; }
+
+body.home-page .hero h1 {
+  font-family: 'Courier New', monospace;
+  color: #eafff2;
+}
+
+body.home-page .hero p.lead { color: #a9d9bd; }
+
+body.home-page .btn {
+  background: #4ade80;
+  color: #0b0f10;
+  font-family: 'Courier New', monospace;
+  border-radius: 3px;
+}
+
+body.home-page .btn:hover { background: #86f5b3; }
+
+body.home-page .btn.btn-outline {
+  border-color: #4ade80;
+  color: #4ade80;
+}
+
+body.home-page .btn.btn-outline:hover { background: rgba(74,222,128,0.1); }
+
+@media (max-width: 620px) {
+  body.home-page .hero-grid { grid-template-columns: 1fr; }
+}
+
+/* ============================================
+   MAIN SECTIONS ON HOME
+============================================ */
+body.home-page main { background: #0b0f10; }
+
+body.home-page section > h2 {
+  color: #eafff2;
+  border-bottom-color: #1e3a2c;
+  font-family: 'Courier New', monospace;
+}
+
+body.home-page section p { color: #b9e2c9; }
+body.home-page section strong { color: #eafff2; }
+
+body.home-page .card {
+  background: #0f1613;
+  border: 1px solid #1e3a2c;
+  border-top: 3px solid #4ade80;
+}
+
+body.home-page .card h3 { color: #eafff2; font-family: 'Courier New', monospace; }
+body.home-page .card h3::before { content: "> "; color: #4ade80; }
+body.home-page .card p { color: #a9d9bd; }
+body.home-page .card a { color: #4ade80; font-family: 'Courier New', monospace; }
+
+/* Event cards on Home */
+body.home-page .event-card {
+  background: #0f1613;
+  border: 1px solid #1e3a2c;
+}
+
+body.home-page .event-date { background: #163326; color: #4ade80; }
+body.home-page .event-meta { color: #6fae87; }
+
+/* ============================================
+   FOOTER
+============================================ */
+body.home-page footer.site-footer {
+  background: #0b0f10;
+  border-top: 1px solid #163326;
+  color: #6fae87;
+}
+
+body.home-page footer.site-footer h4 { color: #eafff2; font-family: 'Courier New', monospace; }
+body.home-page footer.site-footer a { color: #a9d9bd; }
+body.home-page .footer-bottom { border-top-color: #163326; color: #4c7a61; font-family: 'Courier New', monospace; }
